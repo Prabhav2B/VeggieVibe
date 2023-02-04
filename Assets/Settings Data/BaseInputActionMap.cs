@@ -33,7 +33,7 @@ public partial class @BaseInputActionMap : IInputActionCollection2, IDisposable
                     ""id"": ""003812a3-1ee8-4d9a-829e-8fb617b5cce6"",
                     ""expectedControlType"": """",
                     ""processors"": """",
-                    ""interactions"": """",
+                    ""interactions"": ""Press"",
                     ""initialStateCheck"": false
                 },
                 {
