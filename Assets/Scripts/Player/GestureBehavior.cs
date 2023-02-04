@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SwipeDetection : MonoBehaviour
+public class GestureBehavior : MonoBehaviour
 {
     [SerializeField] private PlayerActions playerActions;
 
@@ -25,12 +25,14 @@ public class SwipeDetection : MonoBehaviour
     {
         playerActions.OnStartTouch += SwipeStart;
         playerActions.OnEndTouch += SwipeEnd;
+        playerActions.OnTap += TapPerformed;
     }
 
     private void OnDisable()
     {
         playerActions.OnStartTouch -= SwipeStart;
         playerActions.OnEndTouch -= SwipeEnd;
+        playerActions.OnTap -= TapPerformed;
     }
 
     private void SwipeStart(Vector2 position, float time)
@@ -55,6 +57,8 @@ public class SwipeDetection : MonoBehaviour
 
     private IEnumerator Trail()
     {
+        // Prevent trail activation on taps
+        yield return new WaitForSeconds(0.1f);
         while (true)
         {
             trail.transform.position = playerActions.PrimaryPosition();
@@ -72,6 +76,11 @@ public class SwipeDetection : MonoBehaviour
             Vector2 direction2D = new Vector2(direction.x, direction.y).normalized;
             SwipeDirection(direction2D);
         }
+    }
+
+    private void TapPerformed(Vector2 tapWorldPosition)
+    {
+        Debug.Log("Tap Performed");
     }
 
     private void SwipeDirection(Vector2 direction)

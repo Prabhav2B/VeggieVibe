@@ -44,6 +44,24 @@ public partial class @BaseInputActionMap : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Primary Tap"",
+                    ""type"": ""Button"",
+                    ""id"": ""f582d976-92af-4442-b64b-c45e6cd88a0f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Tap"",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Primary Hold"",
+                    ""type"": ""Button"",
+                    ""id"": ""c6dbfa55-b745-4b6d-a378-909733801cf4"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Hold"",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -68,6 +86,28 @@ public partial class @BaseInputActionMap : IInputActionCollection2, IDisposable
                     ""action"": ""Primary Position"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f2bb780a-b453-4627-b779-b998005b05c6"",
+                    ""path"": ""<Touchscreen>/primaryTouch/tap"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Primary Tap"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e80fb6b3-a710-45c8-81a6-d1eed4c29e33"",
+                    ""path"": ""<Touchscreen>/primaryTouch/press"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Primary Hold"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -84,6 +124,8 @@ public partial class @BaseInputActionMap : IInputActionCollection2, IDisposable
         m_PlayerActions = asset.FindActionMap("Player Actions", throwIfNotFound: true);
         m_PlayerActions_PrimaryContact = m_PlayerActions.FindAction("Primary Contact", throwIfNotFound: true);
         m_PlayerActions_PrimaryPosition = m_PlayerActions.FindAction("Primary Position", throwIfNotFound: true);
+        m_PlayerActions_PrimaryTap = m_PlayerActions.FindAction("Primary Tap", throwIfNotFound: true);
+        m_PlayerActions_PrimaryHold = m_PlayerActions.FindAction("Primary Hold", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -145,12 +187,16 @@ public partial class @BaseInputActionMap : IInputActionCollection2, IDisposable
     private IPlayerActionsActions m_PlayerActionsActionsCallbackInterface;
     private readonly InputAction m_PlayerActions_PrimaryContact;
     private readonly InputAction m_PlayerActions_PrimaryPosition;
+    private readonly InputAction m_PlayerActions_PrimaryTap;
+    private readonly InputAction m_PlayerActions_PrimaryHold;
     public struct PlayerActionsActions
     {
         private @BaseInputActionMap m_Wrapper;
         public PlayerActionsActions(@BaseInputActionMap wrapper) { m_Wrapper = wrapper; }
         public InputAction @PrimaryContact => m_Wrapper.m_PlayerActions_PrimaryContact;
         public InputAction @PrimaryPosition => m_Wrapper.m_PlayerActions_PrimaryPosition;
+        public InputAction @PrimaryTap => m_Wrapper.m_PlayerActions_PrimaryTap;
+        public InputAction @PrimaryHold => m_Wrapper.m_PlayerActions_PrimaryHold;
         public InputActionMap Get() { return m_Wrapper.m_PlayerActions; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -166,6 +212,12 @@ public partial class @BaseInputActionMap : IInputActionCollection2, IDisposable
                 @PrimaryPosition.started -= m_Wrapper.m_PlayerActionsActionsCallbackInterface.OnPrimaryPosition;
                 @PrimaryPosition.performed -= m_Wrapper.m_PlayerActionsActionsCallbackInterface.OnPrimaryPosition;
                 @PrimaryPosition.canceled -= m_Wrapper.m_PlayerActionsActionsCallbackInterface.OnPrimaryPosition;
+                @PrimaryTap.started -= m_Wrapper.m_PlayerActionsActionsCallbackInterface.OnPrimaryTap;
+                @PrimaryTap.performed -= m_Wrapper.m_PlayerActionsActionsCallbackInterface.OnPrimaryTap;
+                @PrimaryTap.canceled -= m_Wrapper.m_PlayerActionsActionsCallbackInterface.OnPrimaryTap;
+                @PrimaryHold.started -= m_Wrapper.m_PlayerActionsActionsCallbackInterface.OnPrimaryHold;
+                @PrimaryHold.performed -= m_Wrapper.m_PlayerActionsActionsCallbackInterface.OnPrimaryHold;
+                @PrimaryHold.canceled -= m_Wrapper.m_PlayerActionsActionsCallbackInterface.OnPrimaryHold;
             }
             m_Wrapper.m_PlayerActionsActionsCallbackInterface = instance;
             if (instance != null)
@@ -176,6 +228,12 @@ public partial class @BaseInputActionMap : IInputActionCollection2, IDisposable
                 @PrimaryPosition.started += instance.OnPrimaryPosition;
                 @PrimaryPosition.performed += instance.OnPrimaryPosition;
                 @PrimaryPosition.canceled += instance.OnPrimaryPosition;
+                @PrimaryTap.started += instance.OnPrimaryTap;
+                @PrimaryTap.performed += instance.OnPrimaryTap;
+                @PrimaryTap.canceled += instance.OnPrimaryTap;
+                @PrimaryHold.started += instance.OnPrimaryHold;
+                @PrimaryHold.performed += instance.OnPrimaryHold;
+                @PrimaryHold.canceled += instance.OnPrimaryHold;
             }
         }
     }
@@ -193,5 +251,7 @@ public partial class @BaseInputActionMap : IInputActionCollection2, IDisposable
     {
         void OnPrimaryContact(InputAction.CallbackContext context);
         void OnPrimaryPosition(InputAction.CallbackContext context);
+        void OnPrimaryTap(InputAction.CallbackContext context);
+        void OnPrimaryHold(InputAction.CallbackContext context);
     }
 }
