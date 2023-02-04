@@ -9,11 +9,13 @@ public class ProfileGeneration : MonoBehaviour
     [SerializeField] SpriteRenderer eyes;
     [SerializeField] SpriteRenderer mouth;
     [SerializeField] SpriteRenderer body;
+    [SerializeField] SpriteRenderer bg;
 
     [SerializeField] Sprite[] stalkOptions;
     [SerializeField] Sprite[] eyesOptions;
     [SerializeField] Sprite[] mouthOptions;
     [SerializeField] Sprite[] bodyOptions;
+    [SerializeField] Sprite[] bgOptions;
 
     [SerializeField] Vector2 randomBodyScaleX;
     [SerializeField] Vector2 randomBodyScaleY;
@@ -47,6 +49,8 @@ public class ProfileGeneration : MonoBehaviour
             mouth.sprite = mouthOptions[Random.Range(0, mouthOptions.Length)];
         if(bodyOptions.Length>0)
             body.sprite = bodyOptions[Random.Range(0, bodyOptions.Length)];
+        if (bgOptions.Length > 0)
+            bg.sprite = bgOptions[Random.Range(0, bgOptions.Length)];
 
         body.transform.localScale = new Vector2(Random.Range(randomBodyScaleX.x,randomBodyScaleX.y ),
                                                     Random.Range(randomBodyScaleY.x, randomBodyScaleY.y));

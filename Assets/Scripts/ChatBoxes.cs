@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[ExecuteInEditMode]
 public class ChatBoxes : MonoBehaviour
 {
-    public bool debugSpawnContent;
     [Range(0,100)]
     [SerializeField] int currentMood;
 
@@ -18,15 +18,9 @@ public class ChatBoxes : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if(currentMood>=40)
+        if (currentMood >= 40)
         {
             currentPool = goodPool;
         }
@@ -35,10 +29,8 @@ public class ChatBoxes : MonoBehaviour
             currentPool = badPool;
         }
 
-        if(debugSpawnContent)
-        {
-            debugSpawnContent = false;
-            currentContent.sprite = currentPool[Random.Range(0, currentPool.Count)];
-        }
+        currentContent.sprite = currentPool[Random.Range(0, currentPool.Count)];
+
     }
+
 }
