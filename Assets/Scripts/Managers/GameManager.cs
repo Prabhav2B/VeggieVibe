@@ -8,9 +8,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-
     [SerializeField] bool debugWin;
-
     [SerializeField] private ProfilesManager _profilesManager;
     [SerializeField] private ChatGameManager _chatGameManager;
 
@@ -21,6 +19,7 @@ public class GameManager : MonoBehaviour
     public delegate void Match(ProfileBehavior profileBehavior);
 
     public event Match OnMatch;
+    
 
     #endregion
 
@@ -36,9 +35,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] BioGenerator bioUpdate;
     [SerializeField] GameObject matchScreen;
     
+    [Header ("Things to activate")]
     [SerializeField] GameObject chatGameplay;
-
-
+    [Header ("Things to deactivate")]
     [SerializeField] GameObject uiTexts;
     [SerializeField] GameObject swipingGame;
 
@@ -48,6 +47,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject victoryScreen;
     [SerializeField] GameObject nudes;
     [SerializeField] GameObject endScreen;
+    private int fillAmount;
+
 
     private void Awake()
     {
@@ -60,6 +61,11 @@ public class GameManager : MonoBehaviour
         superlikeThreshold = UnityEngine.Random.Range(10, 15);
     }
 
+    public void FillMeterAmount(int amount)
+    {
+        fillAmount += amount;
+    }
+
     private void OnDisable()
     {
         OnMatch += StartChatGame;
@@ -67,6 +73,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        fillAmount = 0;
         playerActions.OnTap += SplashScreenTap;
         //OnMatch(gameObject.AddComponent<ProfileBehavior>());
     }
@@ -119,6 +126,9 @@ public class GameManager : MonoBehaviour
 
         startChatting = true;
     }
+    
+    
+    
 
     public IEnumerator WinScreen()
     {
