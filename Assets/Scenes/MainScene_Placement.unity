@@ -2412,13 +2412,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 771939374}
+  - component: {fileID: 771939375}
   m_Layer: 0
   m_Name: VICTORY_SCREEN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &771939374
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2444,6 +2445,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &771939375
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771939373}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5614de8545144a44381a134614ab25f6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &781549837 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1525034453743715101, guid: b0389c44f132ee8469631ec48e1060d4, type: 3}
@@ -4146,7 +4167,7 @@ RectTransform:
   m_GameObject: {fileID: 1735317311}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0811924, y: 1.0811924, z: 1.0811924}
+  m_LocalScale: {x: 1.0811924, y: 1.081192, z: 1.081192}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 771939374}
@@ -4763,7 +4784,7 @@ RectTransform:
   m_GameObject: {fileID: 1978321010}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.9285998, y: 2.9285998, z: 3.254}
+  m_LocalScale: {x: 2.9285998, y: 2.9286, z: 3.254}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 771939374}
@@ -5896,6 +5917,10 @@ PrefabInstance:
     - target: {fileID: 8080842268066980596, guid: c03644861e8b9464189fc399c0836e96, type: 3}
       propertyPath: m_Name
       value: ITSAMATCH_POPUP
+      objectReference: {fileID: 0}
+    - target: {fileID: 8080842268066980596, guid: c03644861e8b9464189fc399c0836e96, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c03644861e8b9464189fc399c0836e96, type: 3}
