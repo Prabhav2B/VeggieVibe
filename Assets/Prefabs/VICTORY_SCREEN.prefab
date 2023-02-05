@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8991127105219410586}
   - component: {fileID: 8991127105219410587}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: VICTORY_SCREEN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 8991127105310842433}
   - component: {fileID: 8991127105310842432}
   - component: {fileID: 8991127105310842434}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Player_Profile_Pic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 8991127105577883281}
   - component: {fileID: 8991127105577883280}
   - component: {fileID: 8991127105577883282}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -225,7 +225,7 @@ GameObject:
   - component: {fileID: 8991127106194058946}
   - component: {fileID: 8991127106194058945}
   - component: {fileID: 8991127106194058947}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: SuccessIndicator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -301,7 +301,7 @@ GameObject:
   - component: {fileID: 8991127106437067252}
   - component: {fileID: 8991127106437067254}
   - component: {fileID: 8991127106437067253}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Fire_Emoji
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -377,7 +377,7 @@ GameObject:
   - component: {fileID: 8991127106884778315}
   - component: {fileID: 8991127106884765365}
   - component: {fileID: 8991127106884765364}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Kiss_Emoji
   m_TagString: Untagged
   m_Icon: {fileID: 0}
