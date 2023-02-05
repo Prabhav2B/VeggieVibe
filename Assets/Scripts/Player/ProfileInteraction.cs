@@ -8,6 +8,7 @@ using DG.Tweening.Core;
 public class ProfileInteraction : MonoBehaviour
 {
     [SerializeField] private PlayerActions playerActions;
+    [SerializeField] private GestureBehavior playerGestures;
 
     private Camera mainCam;
     private Coroutine profileCoroutine;
@@ -28,12 +29,14 @@ public class ProfileInteraction : MonoBehaviour
         playerActions.OnStartHold += StartDetectProfile;
         playerActions.OnEndHold += EndDetectProfile;
         //playerActions.OnTap += TapPerformed;
+        playerGestures.OnSwipe += SwipeAway;
     }
 
     private void OnDisable()
     {
         playerActions.OnStartHold -= StartDetectProfile;
         playerActions.OnEndHold -= EndDetectProfile;
+        playerGestures.OnSwipe -= SwipeAway;
         //playerActions.OnTap -= TapPerformed;
     }
 
@@ -78,8 +81,16 @@ public class ProfileInteraction : MonoBehaviour
             StopCoroutine(MoveProfile());
             DOTween.Kill(this);
             profileTransform.DOMove(profileStartPosition, .2f);
-            profileTransform = null;
-            
+            profileTransform = null;            
         }
+    }
+
+    void SwipeAway(GestureBehavior.Direction dir)
+    {
+        // create more profiles
+        ProfilesManager.instance.currentProfile.SetActive(false);
+        ProfilesManager.instance.SpawnMoreProfile();
+        ProfilesManager.instance.SwipeAwayDirection(dir);
+
     }
 }

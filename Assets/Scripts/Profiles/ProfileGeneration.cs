@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[ExecuteInEditMode]
+//[ExecuteInEditMode]
 public class ProfileGeneration : MonoBehaviour
 {
     [SerializeField] SpriteRenderer stalk;
