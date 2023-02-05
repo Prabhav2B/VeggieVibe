@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Unity.Mathematics;
 
 public class GameManager : MonoBehaviour
 {
@@ -66,11 +67,25 @@ public class GameManager : MonoBehaviour
     public void FillMeterAmount(int amount)
     {
         fillAmount += amount;
-        float xVal = (fillAmount - -100) / (-1.75f - -100) * (1.75f - 100) + 100;
+        float xVal = Remap(fillAmount, -100f, 100f, -1.75f, 1.75f); 
         playerInMeter.transform.position = new Vector2(xVal, playerInMeter.transform.position.y);
         if (fillAmount >= 100)
             StartCoroutine(WinScreen());
         
+    }
+    public float Remap(float from, float fromMin, float fromMax, float toMin, float toMax)
+    {
+        var fromAbs = from - fromMin;
+        var fromMaxAbs = fromMax - fromMin;
+
+        var normal = fromAbs / fromMaxAbs;
+
+        var toMaxAbs = toMax - toMin;
+        var toAbs = toMaxAbs * normal;
+
+        var to = toAbs + toMin;
+
+        return to;
     }
 
     private void OnDisable()
