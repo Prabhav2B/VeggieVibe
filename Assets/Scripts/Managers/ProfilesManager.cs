@@ -88,6 +88,7 @@ public class ProfilesManager : MonoBehaviour
     }
     void SpawnMoreProfile()
     {
+        GameManager.instance.ProfileNumberUpdate();
         GameObject newProfile = Instantiate(profilePrefab, transform);
         SetSortingOrder(newProfile.GetComponentsInChildren<SpriteRenderer>());
     }
