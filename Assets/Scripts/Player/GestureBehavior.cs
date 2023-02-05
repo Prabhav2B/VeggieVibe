@@ -12,6 +12,15 @@ public class GestureBehavior : MonoBehaviour
     [SerializeField, Range(0f, 1f)] private float directionThreshold = 0.9f;
 
     [SerializeField] private GameObject trail;
+
+    #region events
+
+    public delegate void SwipeAction(Direction dir);
+
+    public event SwipeAction OnSwipe;
+
+    #endregion
+    
     
     private Vector2 startPosition;
     private float startTime;
@@ -85,21 +94,33 @@ public class GestureBehavior : MonoBehaviour
 
     private void SwipeDirection(Vector2 direction)
     {
+        Direction dir = Direction.left;
+        
         if (Vector2.Dot(Vector2.up, direction) > directionThreshold)
         {
-            Debug.Log("Swipe Up!");
+            dir = Direction.up;
         }
         else if (Vector2.Dot(Vector2.down, direction) > directionThreshold)
         {
-            Debug.Log("Swipe Down!");
+            dir = Direction.down;
         }
         else if (Vector2.Dot(Vector2.left, direction) > directionThreshold)
         {
-            Debug.Log("Swipe Left!");
+            dir = Direction.left;
         }
         else if (Vector2.Dot(Vector2.right, direction) > directionThreshold)
         {
-            Debug.Log("Swipe Right!");
+            dir = Direction.right;
         }
+
+        if (OnSwipe != null) OnSwipe(dir);
+    }
+    
+    public enum Direction
+    {
+        left,
+        right,
+        up,
+        down
     }
 }
