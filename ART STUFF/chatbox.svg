@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.72 434.3">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff61bf;
+        filter: url(#drop-shadow-7);
+        stroke: #ff1d25;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+
+      .cls-2 {
+        fill: #8e20da;
+        filter: url(#drop-shadow-6);
+        stroke: #ff3e3e;
+      }
+    </style>
+    <filter id="drop-shadow-6" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="7"/>
+      <feGaussianBlur result="blur" stdDeviation="5"/>
+      <feFlood flood-color="#300d4c" flood-opacity=".25"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-7" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="7"/>
+      <feGaussianBlur result="blur-2" stdDeviation="5"/>
+      <feFlood flood-color="#300d4c" flood-opacity=".25"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path class="cls-2" d="M384.47,369.28H80.9c-9.12,0-30.59-22.81-30.59-30.59V81.81c0-16.89,13.69-30.59,30.59-30.59H384.47c16.89,0,30.59,13.69,30.59,30.59V338.69c0,16.89-13.69,30.59-30.59,30.59Z"/>
+  <path class="cls-1" d="M384.47,374.13H80.9c-9.12,0-55.06,13.11-57.24,12.24,12.24-10.49,26.65-35.05,26.65-42.82V86.66c0-16.89,13.69-30.59,30.59-30.59H384.47c16.89,0,30.59,13.69,30.59,30.59V343.54c0,16.89-13.69,30.59-30.59,30.59Z"/>
+</svg>
