@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class ChatBoxBehavior : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
+    //public ChatGeneration _chatGeneration { set; private get; }
+
+    
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    // void Update()
+    // {
+    //     if(_chatGeneration == null)
+    //         return;
+    //     
+    //     transform.position += Vector3.up * (_chatGeneration.ChatSpeed * Time.deltaTime);
+    // }
 }

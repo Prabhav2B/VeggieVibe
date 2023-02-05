@@ -28,8 +28,8 @@ public class ProfileInteraction : MonoBehaviour
     {
         playerActions.OnStartHold += StartDetectProfile;
         playerActions.OnEndHold += EndDetectProfile;
-        //playerActions.OnTap += TapPerformed;
         playerGestures.OnSwipe += SwipeAway;
+        playerActions.OnTap += CheckTaps;
     }
 
     private void OnDisable()
@@ -37,18 +37,38 @@ public class ProfileInteraction : MonoBehaviour
         playerActions.OnStartHold -= StartDetectProfile;
         playerActions.OnEndHold -= EndDetectProfile;
         playerGestures.OnSwipe -= SwipeAway;
-        //playerActions.OnTap -= TapPerformed;
+        playerActions.OnTap -= CheckTaps;
+    }
+
+    void CheckTaps(Vector2 pos)
+    {
+        if (!GameManager.instance.startSwiping) return;
+
+        Ray ray = playerActions.GetScreenToWorldRay();
+        RaycastHit2D hit2D = Physics2D.GetRayIntersection(ray);
+        ButtonInteraction validButton = hit2D.collider.GetComponent<ButtonInteraction>();
+        if(validButton)
+        {
+            if (validButton.superlikeButton)
+                SwipeAway(GestureBehavior.Direction.up);
+            else if(validButton.dislikeButton)
+                SwipeAway(GestureBehavior.Direction.left);
+            else if (validButton.likeButton)
+                SwipeAway(GestureBehavior.Direction.right);
+        }
     }
 
     void StartDetectProfile(Vector2 position)
     {
+        if (!GameManager.instance.startSwiping) return;
+
         Ray ray = playerActions.GetScreenToWorldRay();
         RaycastHit2D hit2D = Physics2D.GetRayIntersection(ray);
-
+        Transform currentProf = ProfilesManager.instance.currentProfile.transform;
         if (hit2D.collider != null)
         {
             dragActive = true;
-            profileTransform = ProfilesManager.instance.currentProfile.transform.GetComponent<Transform>();
+            profileTransform = currentProf;
             //profileTransform = hit2D.collider.transform.parent.GetComponent<Transform>();
             profileStartPosition = profileTransform.position;
             profileCoroutine = StartCoroutine(MoveProfile());
@@ -104,12 +124,13 @@ public class ProfileInteraction : MonoBehaviour
             return true;
         }
         //return to center
-        Debug.LogError("Return to Center");
+        //Debug.LogError("Return to Center");
         return false;
     }
 
     void SwipeAway(GestureBehavior.Direction dir)
     {
+        if (!GameManager.instance.startSwiping) return;
         // create more profiles
         ProfilesManager.instance.SwipeAwayDirection(dir);
     }

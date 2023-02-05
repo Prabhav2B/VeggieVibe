@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//[ExecuteInEditMode]
+[ExecuteInEditMode]
 public class ProfileGeneration : MonoBehaviour
 {
     [SerializeField] SpriteRenderer stalk;
@@ -10,6 +10,7 @@ public class ProfileGeneration : MonoBehaviour
     [SerializeField] SpriteRenderer mouth;
     [SerializeField] SpriteRenderer body;
     [SerializeField] SpriteRenderer bg;
+    [SerializeField] SpriteRenderer bgHalfTone;
 
     [SerializeField] Sprite[] stalkOptions;
     [SerializeField] Sprite[] eyesOptions;
@@ -24,14 +25,12 @@ public class ProfileGeneration : MonoBehaviour
     [SerializeField] Vector2 randomRotation;
 
     [SerializeField] Color[] randomStalkColors;   
-    [SerializeField] Color[] randomBodyColors;   
+    [SerializeField] Color[] randomBodyColors;
 
+    [SerializeField] GameObject likeNotif;
+    [SerializeField] GameObject dislikeNotif;
+    [SerializeField] GameObject superlikeNotif;
 
-
-    void Start()
-    {
-        
-    }
 
     private void OnEnable()
     {
@@ -61,6 +60,27 @@ public class ProfileGeneration : MonoBehaviour
         stalk.transform.eulerAngles = new Vector3(0,0,Random.Range(randomRotation.x, randomRotation.y));
 
         stalk.color = randomStalkColors[Random.Range(0,randomStalkColors.Length)];
-        body.color = randomBodyColors[Random.Range(0, randomBodyColors.Length)];
+        int randBodyColor = Random.Range(0, randomBodyColors.Length);
+        body.color = randomBodyColors[randBodyColor];
+        bgHalfTone.color = randomBodyColors[randBodyColor];
+    }
+
+    public void Like()
+    {
+        likeNotif.SetActive(true);
+    }
+    public void Dislike()
+    {
+        dislikeNotif.SetActive(true);
+    }
+    public void Superlike()
+    {
+        superlikeNotif.SetActive(true);
+    }
+
+    public IEnumerator ProfileDeactivate(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        gameObject.SetActive(false);
     }
 }
