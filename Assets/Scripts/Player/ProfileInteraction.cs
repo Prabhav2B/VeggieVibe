@@ -28,8 +28,8 @@ public class ProfileInteraction : MonoBehaviour
     {
         playerActions.OnStartHold += StartDetectProfile;
         playerActions.OnEndHold += EndDetectProfile;
-        //playerActions.OnTap += TapPerformed;
         playerGestures.OnSwipe += SwipeAway;
+        playerActions.OnTap += CheckTaps;
     }
 
     private void OnDisable()
@@ -37,7 +37,25 @@ public class ProfileInteraction : MonoBehaviour
         playerActions.OnStartHold -= StartDetectProfile;
         playerActions.OnEndHold -= EndDetectProfile;
         playerGestures.OnSwipe -= SwipeAway;
-        //playerActions.OnTap -= TapPerformed;
+        playerActions.OnTap -= CheckTaps;
+    }
+
+    void CheckTaps(Vector2 pos)
+    {
+        if (!GameManager.instance.startSwiping) return;
+
+        Ray ray = playerActions.GetScreenToWorldRay();
+        RaycastHit2D hit2D = Physics2D.GetRayIntersection(ray);
+        ButtonInteraction validButton = hit2D.collider.GetComponent<ButtonInteraction>();
+        if(validButton)
+        {
+            if (validButton.superlikeButton)
+                SwipeAway(GestureBehavior.Direction.up);
+            else if(validButton.dislikeButton)
+                SwipeAway(GestureBehavior.Direction.left);
+            else if (validButton.likeButton)
+                SwipeAway(GestureBehavior.Direction.right);
+        }
     }
 
     void StartDetectProfile(Vector2 position)

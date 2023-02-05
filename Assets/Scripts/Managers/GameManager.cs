@@ -24,8 +24,8 @@ public class GameManager : MonoBehaviour
     private static readonly Vector3 chatGameDock = new Vector3(6f, 0f, 0f);
 
     [SerializeField] Animator anim;
-    public bool startSwiping;
-    public bool startChatting;
+    public bool startSwiping=false;
+    public bool startChatting=false;
 
     private void Awake()
     {
