@@ -13,16 +13,6 @@ public class GreenFlag : MonoBehaviour
         heartClicked = false;
     }
 
-    private void OnEnable()
-    {
-        throw new NotImplementedException();
-    }
-
-    private void OnDestroy()
-    {
-        throw new NotImplementedException();
-    }
-
     private void Update()
     {
         if (_chatGeneration == null)
