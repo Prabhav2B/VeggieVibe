@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -14,6 +15,10 @@ public class ChatGeneration : MonoBehaviour
 
     [SerializeField] private List<GameObject> standardPlayerChatBoxes;
     [SerializeField] private List<GameObject> standardMatchChatBoxes;
+
+    [SerializeField] private int incrementSteps = 10;
+    private int currentStep;
+    
     private float _chatSpeed;
 
     public float ChatSpeed
@@ -31,12 +36,13 @@ public class ChatGeneration : MonoBehaviour
     
     private void Start()
     {
-        _chatSpeed = 10f;
+        _chatSpeed = 1f;
         StartChatGeneration();
     }
 
     void StartChatGeneration()
     {
+        currentStep = 0;
         chatGeneratorCoroutine = StartCoroutine(ChatGenerator());
     }
 
@@ -57,10 +63,29 @@ public class ChatGeneration : MonoBehaviour
              go.transform.position = instantiationTransform.position;
              go.GetComponent<ChatBoxes>()._chatGeneration = this;
 
-             yield return new WaitForSeconds(1f);
+             var chatBoxSize = go.GetComponentInChildren<Collider2D>().bounds;
+
+             var size = chatBoxSize.size;
+
+             var timeToWait = (size.y / ChatSpeed) + 1f;
+
+             currentStep++;
+
+             CheckStepIncrement();
+
+             yield return new WaitForSeconds(timeToWait);
         }
         
         yield return null;
+    }
+
+    private void CheckStepIncrement()
+    {
+        if (currentStep > incrementSteps)
+        {
+            var targetSpeed = _chatSpeed + 1;
+            DOTween.To(() => _chatSpeed, x => _chatSpeed = x, targetSpeed, 5f);
+        }
     }
 
     public enum ChatState
