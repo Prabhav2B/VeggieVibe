@@ -81,6 +81,6 @@ public class ProfileGeneration : MonoBehaviour
     public IEnumerator ProfileDeactivate(float delay)
     {
         yield return new WaitForSeconds(delay);
-        gameObject.SetActive(false);
+        Destroy(transform.parent.gameObject);
     }
 }

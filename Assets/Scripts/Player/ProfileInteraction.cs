@@ -85,7 +85,7 @@ public class ProfileInteraction : MonoBehaviour
             }
             else
             {
-                profileTransform.DOMove(playerActions.PrimaryPosition(), .13f) ;
+                profileTransform.DOMove(playerActions.PrimaryPosition(), .13f).SetEase(Ease.OutQuad);
             }
 
             yield return null;
