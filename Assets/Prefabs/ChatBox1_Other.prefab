@@ -42,7 +42,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.12950563, y: 0.11223823}
@@ -105,7 +105,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29ecfbca06da5304abc10dce16c5d33f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugSpawnContent: 0
   currentMood: 0
   currentContent: {fileID: 2900919479665136862}
   goodPool:
@@ -273,7 +272,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -1016933550, guid: b2cc87ba4396c824f85317665edc6c9b, type: 3}
+  m_Sprite: {fileID: -138501805, guid: b2cc87ba4396c824f85317665edc6c9b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
