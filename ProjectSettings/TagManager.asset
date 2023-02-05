@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX
@@ -43,6 +44,9 @@ TagManager:
     locked: 0
   - name: Profile Cards
     uniqueID: 2061880059
+    locked: 0
+  - name: Player
+    uniqueID: 1774871261
     locked: 0
   - name: VFX
     uniqueID: 3858814701
