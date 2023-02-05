@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         playerActions.OnTap += SplashScreenTap;
-        //OnMatch(gameObject.AddComponent<ProfileBehavior>());
+        OnMatch(gameObject.AddComponent<ProfileBehavior>());
     }
 
     void StartChatGame(ProfileBehavior profile)

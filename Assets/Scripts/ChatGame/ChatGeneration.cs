@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -14,8 +15,13 @@ public class ChatGeneration : MonoBehaviour
 
     [SerializeField] private List<GameObject> standardPlayerChatBoxes;
     [SerializeField] private List<GameObject> standardMatchChatBoxes;
-    private float _chatSpeed;
 
+    [SerializeField] private int incrementSteps = 10;
+    private int currentStep;
+    
+    private float _chatSpeed;
+    private float chatBuffer;
+    
     public float ChatSpeed
     {
         get
@@ -31,12 +37,14 @@ public class ChatGeneration : MonoBehaviour
     
     private void Start()
     {
-        _chatSpeed = 10f;
+        _chatSpeed = 1f;
+        chatBuffer = 2f;
         StartChatGeneration();
     }
 
     void StartChatGeneration()
     {
+        currentStep = 0;
         chatGeneratorCoroutine = StartCoroutine(ChatGenerator());
     }
 
@@ -57,10 +65,33 @@ public class ChatGeneration : MonoBehaviour
              go.transform.position = instantiationTransform.position;
              go.GetComponent<ChatBoxes>()._chatGeneration = this;
 
-             yield return new WaitForSeconds(1f);
+             var chatBoxSize = go.GetComponentInChildren<Collider2D>().bounds;
+
+             var size = chatBoxSize.size;
+
+             var timeToWait = ((size.y) / ChatSpeed) + (chatBuffer / _chatSpeed) ;
+
+             currentStep++;
+
+             CheckStepIncrement();
+
+             yield return new WaitForSeconds(timeToWait);
         }
         
         yield return null;
+    }
+
+    private void CheckStepIncrement()
+    {
+        if (currentStep > incrementSteps)
+        {
+            var targetSpeed = _chatSpeed + 1f;
+            currentStep = 0;
+            incrementSteps += 10;
+            var target_buffer = chatBuffer + 0.5; 
+            DOTween.To(() => _chatSpeed, x => _chatSpeed = (float) x, targetSpeed, 10f);
+            DOTween.To(() => chatBuffer, x => chatBuffer = (float) x, target_buffer, 10f);
+        }
     }
 
     public enum ChatState
