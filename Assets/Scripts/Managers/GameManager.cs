@@ -48,6 +48,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject nudes;
     [SerializeField] GameObject endScreen;
     private int fillAmount;
+    [SerializeField] Transform playerInMeter;
+    
 
 
     private void Awake()
@@ -64,6 +66,8 @@ public class GameManager : MonoBehaviour
     public void FillMeterAmount(int amount)
     {
         fillAmount += amount;
+        float xVal = (fillAmount - -100) / (-1.75f - -100) * (1.75f - 100) + 100;
+        playerInMeter.transform.position = new Vector2(xVal, playerInMeter.transform.position.y);
         if (fillAmount >= 100)
             StartCoroutine(WinScreen());
         
