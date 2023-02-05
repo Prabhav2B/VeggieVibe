@@ -512,6 +512,7 @@ GameObject:
   - component: {fileID: 3101807422843291994}
   - component: {fileID: 670122938908496557}
   - component: {fileID: 4949017755386795259}
+  - component: {fileID: 6182628545155463420}
   m_Layer: 0
   m_Name: Heart
   m_TagString: Untagged
@@ -594,6 +595,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6182628545155463420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7756399178093514074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1c867107677eb9458c8b845f430a047, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9002645784383882463
 GameObject:
   m_ObjectHideFlags: 0

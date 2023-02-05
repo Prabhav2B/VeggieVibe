@@ -93,6 +93,7 @@ public class ChatGeneration : MonoBehaviour
     {
         if (currentStep > incrementSteps)
         {
+            GameManager.instance.FillMeterAmount(10);
             var targetSpeed = _chatSpeed + 1f;
             currentStep = 0;
             incrementSteps += 10;

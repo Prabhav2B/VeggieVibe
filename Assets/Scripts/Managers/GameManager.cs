@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public delegate void Match(ProfileBehavior profileBehavior);
 
     public event Match OnMatch;
+    
 
     #endregion
 
@@ -38,7 +39,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject uiTexts;
     [SerializeField] GameObject swipingGame;
 
-
+    private int fillAmount;
 
     private void Awake()
     {
@@ -51,6 +52,11 @@ public class GameManager : MonoBehaviour
         superlikeThreshold = UnityEngine.Random.Range(10, 15);
     }
 
+    public void FillMeterAmount(int amount)
+    {
+        fillAmount += amount;
+    }
+
     private void OnDisable()
     {
         OnMatch += StartChatGame;
@@ -58,6 +64,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        fillAmount = 0;
         playerActions.OnTap += SplashScreenTap;
         //OnMatch(gameObject.AddComponent<ProfileBehavior>());
     }
@@ -110,7 +117,9 @@ public class GameManager : MonoBehaviour
 
         startChatting = true;
     }
-
+    
+    
+    
 
    
 }

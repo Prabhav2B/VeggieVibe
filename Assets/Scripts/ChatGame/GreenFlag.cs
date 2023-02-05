@@ -7,6 +7,7 @@ public class GreenFlag : MonoBehaviour
 {
     public ChatGeneration _chatGeneration { set; private get; }
     private bool heartClicked;
+    
 
     private void Start()
     {
@@ -26,6 +27,7 @@ public class GreenFlag : MonoBehaviour
     public void HeartClicked()
     {
         heartClicked = true;
-        this.GetComponentsInChildren<Transform>()[1].gameObject.SetActive(true);
+        this.GetComponentInChildren<Dummy>().gameObject.SetActive(true);
+        GameManager.instance.FillMeterAmount(10);
     }
 }
