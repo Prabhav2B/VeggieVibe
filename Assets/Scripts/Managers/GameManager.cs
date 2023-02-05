@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour
 
 
     [Header ("Ending Sequence")]
+    //[SerializeField] GameObject loseScreen;
     [SerializeField] GameObject victoryScreen;
     [SerializeField] GameObject nudes;
     [SerializeField] GameObject endScreen;
@@ -132,6 +133,12 @@ public class GameManager : MonoBehaviour
         endScreen.SetActive(true);
         //end
     }
+
+    //public void LoseScreen()
+    //{
+    //    chatGameplay.SetActive(false);
+    //    loseScreen.SetActive(true);
+    //}
 
 
     public void OnDeleteApp()
