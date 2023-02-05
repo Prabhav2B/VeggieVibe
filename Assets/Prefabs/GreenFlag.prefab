@@ -33,7 +33,6 @@ Transform:
   - {fileID: 7236690224143358915}
   - {fileID: 7621447140481571705}
   - {fileID: 4886459470720003570}
-  - {fileID: 3101807422843291994}
   - {fileID: 2677015157434403416}
   - {fileID: 8280679163479439006}
   - {fileID: 8119147179894507213}
@@ -101,9 +100,10 @@ Transform:
   m_LocalPosition: {x: 0, y: -1.24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 3101807422843291994}
   m_Father: {fileID: 909334851276712674}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &5398914531827140082
 BoxCollider2D:
@@ -140,7 +140,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4886459470720003570}
-  - component: {fileID: 6941802499252746251}
   - component: {fileID: 5113106890319980273}
   m_Layer: 0
   m_Name: TAPPABLE_BUBBLE
@@ -164,14 +163,6 @@ Transform:
   m_Father: {fileID: 909334851276712674}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!222 &6941802499252746251
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2290016076014162451}
-  m_CullTransparentMesh: 1
 --- !u!212 &5113106890319980273
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -255,7 +246,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 909334851276712674}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!222 &7741280287432562099
 CanvasRenderer:
@@ -347,7 +338,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 909334851276712674}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &922939851314345642
 BoxCollider2D:
@@ -468,7 +459,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3101807422843291994}
-  - component: {fileID: 670122938908496557}
   - component: {fileID: 4949017755386795259}
   m_Layer: 0
   m_Name: Heart
@@ -485,21 +475,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7756399178093514074}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.42, y: -2.5410001, z: 0}
+  m_LocalPosition: {x: 0.42000002, y: -1.3010001, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 909334851276712674}
-  m_RootOrder: 3
+  m_Father: {fileID: 8119147179894507213}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!222 &670122938908496557
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7756399178093514074}
-  m_CullTransparentMesh: 1
 --- !u!212 &4949017755386795259
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -561,7 +543,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7621447140481571705}
-  - component: {fileID: 5236167344815216579}
   - component: {fileID: 7148286864680552395}
   m_Layer: 0
   m_Name: HeartNOTFILLED
@@ -585,14 +566,6 @@ Transform:
   m_Father: {fileID: 909334851276712674}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!222 &5236167344815216579
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9002645784383882463}
-  m_CullTransparentMesh: 1
 --- !u!212 &7148286864680552395
 SpriteRenderer:
   m_ObjectHideFlags: 0

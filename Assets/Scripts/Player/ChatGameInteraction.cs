@@ -24,7 +24,18 @@ public class ChatGameInteraction : MonoBehaviour
 
     private void CheckHeart(Vector2 position)
     {
-        throw new NotImplementedException();
+        //if (GameManager.instance.startSwiping) return;
+
+        Ray ray = _playerActions.GetScreenToWorldRay();
+        RaycastHit2D[] hit2D = Physics2D.GetRayIntersectionAll(ray);
+
+        foreach (var hit in hit2D)
+        {
+            if (hit.collider.gameObject.CompareTag("Heart"))
+            {
+                hit.collider.transform.parent.GetComponent<GreenFlag>().HeartClicked();
+            }
+        }
     }
 
     private void OnDisable()
