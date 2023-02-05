@@ -82,7 +82,7 @@ public class ChatGeneration : MonoBehaviour
              currentStep++;
 
              CheckStepIncrement();
-
+             GameManager.instance.FillMeterAmount(1);
              yield return new WaitForSeconds(timeToWait);
         }
         

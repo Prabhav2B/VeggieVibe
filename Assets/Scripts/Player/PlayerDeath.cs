@@ -17,7 +17,7 @@ public class PlayerDeath : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         OnDeath?.Invoke();
-        GameManager.instance.FillMeterAmount(-10);
+        GameManager.instance.FillMeterAmount(-2);
     }
 
 

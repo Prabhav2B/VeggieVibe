@@ -27,7 +27,8 @@ public class GreenFlag : MonoBehaviour
     public void HeartClicked()
     {
         heartClicked = true;
-        this.GetComponentInChildren<Dummy>().gameObject.SetActive(true);
         GameManager.instance.FillMeterAmount(10);
+        this.GetComponentInChildren<Dummy>().gameObject.SetActive(true);
+        
     }
 }
