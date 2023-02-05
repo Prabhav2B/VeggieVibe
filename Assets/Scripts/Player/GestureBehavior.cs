@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SwipeDetection : MonoBehaviour
+public class GestureBehavior : MonoBehaviour
 {
     [SerializeField] private PlayerActions playerActions;
 
@@ -12,6 +12,15 @@ public class SwipeDetection : MonoBehaviour
     [SerializeField, Range(0f, 1f)] private float directionThreshold = 0.9f;
 
     [SerializeField] private GameObject trail;
+
+    #region events
+
+    public delegate void SwipeAction(Direction dir);
+
+    public event SwipeAction OnSwipe;
+
+    #endregion
+    
     
     private Vector2 startPosition;
     private float startTime;
@@ -25,12 +34,14 @@ public class SwipeDetection : MonoBehaviour
     {
         playerActions.OnStartTouch += SwipeStart;
         playerActions.OnEndTouch += SwipeEnd;
+        playerActions.OnTap += TapPerformed;
     }
 
     private void OnDisable()
     {
         playerActions.OnStartTouch -= SwipeStart;
         playerActions.OnEndTouch -= SwipeEnd;
+        playerActions.OnTap -= TapPerformed;
     }
 
     private void SwipeStart(Vector2 position, float time)
@@ -55,6 +66,8 @@ public class SwipeDetection : MonoBehaviour
 
     private IEnumerator Trail()
     {
+        // Prevent trail activation on taps
+        yield return new WaitForSeconds(0.1f);
         while (true)
         {
             trail.transform.position = playerActions.PrimaryPosition();
@@ -74,23 +87,40 @@ public class SwipeDetection : MonoBehaviour
         }
     }
 
+    private void TapPerformed(Vector2 tapWorldPosition)
+    {
+        Debug.Log("Tap Performed");
+    }
+
     private void SwipeDirection(Vector2 direction)
     {
+        Direction dir = Direction.left;
+        
         if (Vector2.Dot(Vector2.up, direction) > directionThreshold)
         {
-            Debug.Log("Swipe Up!");
+            dir = Direction.up;
         }
         else if (Vector2.Dot(Vector2.down, direction) > directionThreshold)
         {
-            Debug.Log("Swipe Down!");
+            dir = Direction.down;
         }
         else if (Vector2.Dot(Vector2.left, direction) > directionThreshold)
         {
-            Debug.Log("Swipe Left!");
+            dir = Direction.left;
         }
         else if (Vector2.Dot(Vector2.right, direction) > directionThreshold)
         {
-            Debug.Log("Swipe Right!");
+            dir = Direction.right;
         }
+
+        if (OnSwipe != null) OnSwipe(dir);
+    }
+    
+    public enum Direction
+    {
+        left,
+        right,
+        up,
+        down
     }
 }
