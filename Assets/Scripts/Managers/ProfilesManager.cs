@@ -83,7 +83,7 @@ public class ProfilesManager : MonoBehaviour
             Debug.LogError("Superlike");
             //superlike swipe
         }
-        profile.ProfileDeactivate(swipeAwayTime + 0.3f);
+        //StartCoroutine(profile.ProfileDeactivate(swipeAwayTime + 0.3f));
         SpawnMoreProfile();
     }
     void SpawnMoreProfile()
