@@ -13,7 +13,7 @@ public class ChatGameInteraction : MonoBehaviour
     
     void Start()
     {
-        enabled = false;
+        //enabled = false;
     }
 
     private void OnEnable()
@@ -21,14 +21,21 @@ public class ChatGameInteraction : MonoBehaviour
         _gestureBehavior.OnSwipe += MovePlayer;
         _playerActions.OnTap += CheckHeart;
     }
+    
+    private void OnDisable()
+    {
+        _gestureBehavior.OnSwipe -= MovePlayer;
+        _playerActions.OnTap -= CheckHeart;
+    }
 
     private void CheckHeart(Vector2 position)
     {
         //if (GameManager.instance.startSwiping) return;
-
+        
+        
         Ray ray = _playerActions.GetScreenToWorldRay();
         RaycastHit2D[] hit2D = Physics2D.GetRayIntersectionAll(ray);
-
+        
         foreach (var hit in hit2D)
         {
             if (hit.collider.gameObject.CompareTag("Heart"))
@@ -38,11 +45,7 @@ public class ChatGameInteraction : MonoBehaviour
         }
     }
 
-    private void OnDisable()
-    {
-        _gestureBehavior.OnSwipe -= MovePlayer;
-        _playerActions.OnTap -= CheckHeart;
-    }
+    
     
     private void MovePlayer(GestureBehavior.Direction dir)
     {

@@ -34,14 +34,12 @@ public class GestureBehavior : MonoBehaviour
     {
         playerActions.OnStartTouch += SwipeStart;
         playerActions.OnEndTouch += SwipeEnd;
-        playerActions.OnTap += TapPerformed;
     }
 
     private void OnDisable()
     {
         playerActions.OnStartTouch -= SwipeStart;
         playerActions.OnEndTouch -= SwipeEnd;
-        playerActions.OnTap -= TapPerformed;
     }
 
     private void SwipeStart(Vector2 position, float time)
@@ -86,11 +84,7 @@ public class GestureBehavior : MonoBehaviour
             SwipeDirection(direction2D);
         }
     }
-
-    private void TapPerformed(Vector2 tapWorldPosition)
-    {
-        Debug.Log("Tap Performed");
-    }
+    
 
     private void SwipeDirection(Vector2 direction)
     {
