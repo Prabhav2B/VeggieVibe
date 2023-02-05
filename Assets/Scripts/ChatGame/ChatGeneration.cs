@@ -20,7 +20,8 @@ public class ChatGeneration : MonoBehaviour
     private int currentStep;
     
     private float _chatSpeed;
-
+    private float chatBuffer;
+    
     public float ChatSpeed
     {
         get
@@ -37,6 +38,7 @@ public class ChatGeneration : MonoBehaviour
     private void Start()
     {
         _chatSpeed = 1f;
+        chatBuffer = 2f;
         StartChatGeneration();
     }
 
@@ -67,7 +69,7 @@ public class ChatGeneration : MonoBehaviour
 
              var size = chatBoxSize.size;
 
-             var timeToWait = (size.y / ChatSpeed) + 1f;
+             var timeToWait = ((size.y) / ChatSpeed) + (chatBuffer / _chatSpeed) ;
 
              currentStep++;
 
@@ -83,8 +85,12 @@ public class ChatGeneration : MonoBehaviour
     {
         if (currentStep > incrementSteps)
         {
-            var targetSpeed = _chatSpeed + 1;
-            DOTween.To(() => _chatSpeed, x => _chatSpeed = x, targetSpeed, 5f);
+            var targetSpeed = _chatSpeed + 1f;
+            currentStep = 0;
+            incrementSteps += 10;
+            var target_buffer = chatBuffer + 0.5; 
+            DOTween.To(() => _chatSpeed, x => _chatSpeed = (float) x, targetSpeed, 10f);
+            DOTween.To(() => chatBuffer, x => chatBuffer = (float) x, target_buffer, 10f);
         }
     }
 
