@@ -64,7 +64,7 @@ public class ProfilesManager : MonoBehaviour
         {
             //reject swipe
             profile.Dislike();
-            profile.transform.DOMove(Vector2.left*20f, swipeAwayTime);
+            profile.transform.DOMove(Vector2.left*10f, swipeAwayTime).SetEase(Ease.OutQuad);
             profile.transform.DORotate(Vector3.forward*10, .1f);
             Debug.LogError("Reject");
         }
@@ -72,14 +72,14 @@ public class ProfilesManager : MonoBehaviour
         {
             //like swipe
             profile.Like();
-            profile.transform.DOMove(Vector2.right*20f, swipeAwayTime);
+            profile.transform.DOMove(Vector2.right*10f, swipeAwayTime).SetEase(Ease.OutQuad);
             profile.transform.DORotate(Vector3.forward*-10, .1f);
             Debug.LogError("Like");
         }
         if (dir == GestureBehavior.Direction.up)
         {
             profile.Superlike();
-            profile.transform.DOMove(Vector2.up*30f, swipeAwayTime);
+            profile.transform.DOMove(Vector2.up*20f, swipeAwayTime).SetEase(Ease.OutQuad);
             Debug.LogError("Superlike");
             //superlike swipe
         }
