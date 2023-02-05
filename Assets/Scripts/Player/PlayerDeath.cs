@@ -20,9 +20,5 @@ public class PlayerDeath : MonoBehaviour
         Debug.Log("Death");
     }
 
-    // private void OnCollisionEnter2D(Collision2D other)
-    // {
-    //     OnDeath?.Invoke();
-    //     Debug.Log("Death");
-    // }
+
 }
