@@ -19,11 +19,18 @@ public class ChatGameInteraction : MonoBehaviour
     private void OnEnable()
     {
         _gestureBehavior.OnSwipe += MovePlayer;
+        _playerActions.OnTap += CheckHeart;
     }
-    
+
+    private void CheckHeart(Vector2 position)
+    {
+        throw new NotImplementedException();
+    }
+
     private void OnDisable()
     {
         _gestureBehavior.OnSwipe -= MovePlayer;
+        _playerActions.OnTap -= CheckHeart;
     }
     
     private void MovePlayer(GestureBehavior.Direction dir)

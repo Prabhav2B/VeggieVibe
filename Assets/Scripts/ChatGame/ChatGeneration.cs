@@ -63,7 +63,15 @@ public class ChatGeneration : MonoBehaviour
             
              var go = (GameObject)Instantiate(currentChatPrefab, chatParent);
              go.transform.position = instantiationTransform.position;
-             go.GetComponent<ChatBoxes>()._chatGeneration = this;
+
+             if (go.GetComponent<ChatBoxes>() != null)
+             {
+                 go.GetComponent<ChatBoxes>()._chatGeneration = this;
+             }
+             else
+             {
+                 go.GetComponent<GreenFlag>()._chatGeneration = this;
+             }
 
              var chatBoxSize = go.GetComponentInChildren<Collider2D>().bounds;
 
