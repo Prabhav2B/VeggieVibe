@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[ExecuteInEditMode]
+//[ExecuteInEditMode]
 public class ChatBoxes : MonoBehaviour
 {
     [Range(0,100)]
@@ -16,7 +16,8 @@ public class ChatBoxes : MonoBehaviour
     [SerializeField] List<Sprite>  questionPool;
     [SerializeField] List<Sprite> answerPool;
 
-
+    public ChatGeneration _chatGeneration { set; private get; }
+    
     // Start is called before the first frame update
     void OnEnable()
     {
@@ -31,6 +32,16 @@ public class ChatBoxes : MonoBehaviour
 
         currentContent.sprite = currentPool[Random.Range(0, currentPool.Count)];
 
+    }
+
+    private void Update()
+    {
+        if (_chatGeneration == null)
+        {
+            return;
+        }
+
+        transform.position = transform.position + Vector3.up * (_chatGeneration.ChatSpeed * Time.deltaTime);
     }
 
 }

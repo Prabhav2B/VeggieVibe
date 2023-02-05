@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        //OnMatch(gameObject.AddComponent<ProfileBehavior>());
+        OnMatch(gameObject.AddComponent<ProfileBehavior>());
     }
 
     void StartChatGame(ProfileBehavior profile)
