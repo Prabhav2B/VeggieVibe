@@ -1,0 +1,2102 @@
+fileFormatVersion: 2
+guid: 2c73f7e643d41465f93e74d94c582023
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 806.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4bd44bf005a41c79f2f642221c7283
+      internalID: -920416729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_1
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 806.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e302f935fd78f454d966d4c982b7586e
+      internalID: -286431376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_2
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 806.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59867a857e104f46be466af8df865b1
+      internalID: 1838503413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_3
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 806.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c7040a565e64d2f8ed466ddbcddc28
+      internalID: -698580252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_4
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 806.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de164c916fa5f4c0c8b17a010550a051
+      internalID: -1906951005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_5
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 806.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7178c460ce2c84f7caefeb7091d2e070
+      internalID: -1867029806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_6
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 806.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edfe62af5daec4efcbd108b960c31a18
+      internalID: 1342542153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_7
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 806.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7aa13df1a24243929b879d8660cb290
+      internalID: 571548051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_8
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 806.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9398b8f93fe5346138abdf0270c90d4f
+      internalID: -1617866242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_9
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 806.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a4fa8a47aa4c48129303a264181b0e9
+      internalID: -308708898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 717.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b381da3005784ef193391fe3b543cc4
+      internalID: 204626354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_11
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 717.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfcecbeb24b634cd69dc4c1c4b0578c7
+      internalID: 525505684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_12
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 717.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d800a350ff7d54af395a02e91c4b3678
+      internalID: 736557096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_13
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 717.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f822e9342c54f4294ac0d45bac5919
+      internalID: -1006475674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_14
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 717.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3705d3cec74f4c7c8e794be703d0cf3
+      internalID: -1816428173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_15
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 717.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2dc9fc0dbb6b41048281c3423500999
+      internalID: -94164316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_16
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 717.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b17f192a3fa564518b51023a2908a761
+      internalID: -367571162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_17
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 717.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcdec902da0d84790923b49ae911a6eb
+      internalID: -498531574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_18
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 717.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8305eb512cd084573a5f7d98be25e4e5
+      internalID: 1753005398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_19
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 717.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008a736fa4c0a470fa668370b1c76a26
+      internalID: -1878551278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 628.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0039b0f8c69e4f31b56fcafb4cb7a2d
+      internalID: 675234157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_21
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 628.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b14f5306113f45a993c913bf0c09842
+      internalID: -1339687541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_22
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 628.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a523aabf557464312b35f34887abf901
+      internalID: -71380243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_23
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 628.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27cbc430ab6bf4fb9ba57cbdddedb688
+      internalID: 1172971560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_24
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 628.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c246c046ca484c528a36d3251e5024b
+      internalID: 2083624081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_25
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 628.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c212707d93946498344dcdae5b3395
+      internalID: -948016968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_26
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 628.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac8197bce50e41b9b30559c0a0a9946
+      internalID: 57455343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_27
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 628.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a3d869617f824322bfeaf1c58601817
+      internalID: -1011332747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_28
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 628.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 039e9628eaafb4c7cb69990dc6a135cd
+      internalID: 1988869342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_29
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 628.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 882f601688b7749ff896fa72986aa011
+      internalID: -1721811798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 539.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bebdfe17287a24f9bbcb5e74f51c1ec6
+      internalID: -1264010795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_31
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 539.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb926aa5da66b4a478bfd01c601f6792
+      internalID: -340649461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_32
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 539.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f5dd432bc104e66a7b0b087de5c894
+      internalID: -1994791694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_33
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 539.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 825aa4e218123426b94a99f76f5ff900
+      internalID: 1651032800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_34
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 539.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a1f3c8b9b23a438791b674f43b22707
+      internalID: 1436571529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_35
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 539.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e95e8018e554dd8a7e4df73268819c
+      internalID: -494314716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_36
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 539.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04e182ed8c5b4119bb8089aa6076ee3
+      internalID: -1167782658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_37
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 539.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c390fb3050a4926b1aa0f7e3f9d08a
+      internalID: 471949963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_38
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 539.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2357d6b8b7f4c59aca1bc248c1ff00
+      internalID: -1476257144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_39
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 539.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff567e61598647bf8620327b45e2840
+      internalID: -1703656826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 450.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9234ed642844248b7af254d18425df07
+      internalID: -1449668908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_41
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 450.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5824d8b9a2ac04da1a39062025451e36
+      internalID: -637681500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_42
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 450.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f8c1e7a79044877a7588646a4f7001
+      internalID: 262476912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_43
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 450.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32e495cbf90846fe85105dc61041eaa
+      internalID: -2084614819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_44
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 450.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d1bea4aa95ae47069e6deeba757f908
+      internalID: -1752731223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_45
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 450.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7469e09eabe44e1c8f768ed05025b8f
+      internalID: 624926896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_46
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 450.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4eee69e28cf84306a17df5fdd84a144
+      internalID: 1569548915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_47
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 450.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2dac2f870f5c4c9bb6ed60132566228
+      internalID: 103437271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_48
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 450.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b5d1d69126246ccb62de142145b140
+      internalID: 2047711135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_49
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 450.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0926cc5eb9dda401f9976a304ec2f3b7
+      internalID: 1443630068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 361.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 179d30e21c6ab4f889bcab65c25c684b
+      internalID: -224738200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_51
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 361.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b02f4a248ed94e488cdf6da8c64fd1c
+      internalID: -633674130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_52
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 361.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2a5b5159593b442584c65f87ce40ff7
+      internalID: -93730612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 272.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 738d109b9256548d7949957678b7ae76
+      internalID: -1966488690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_54
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 272.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1018a03619889471db5b315e61c7639f
+      internalID: -2077336565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_55
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 272.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e53e2be3387d40e28a916a36b6bb182
+      internalID: -149607084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_56
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 272.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0440e8a6c6d8f486da6c37795be3bd28
+      internalID: -322711960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_57
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 272.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba8327b5c4f548c299df533952e3958
+      internalID: -846240601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_58
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 272.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2951dbf304a0d44c78eb3f44e876a25e
+      internalID: 1661997167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_59
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 272.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f98b4167122d406fb6292407da13ce1
+      internalID: -529452832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_60
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 272.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c6fc9bc86844290b0084e2aa704839
+      internalID: -1344483419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_61
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 272.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a04470726e1048eb83d78baa7ef2194
+      internalID: 465389510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_62
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 272.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7832081ee7246b9a79f643e36d8edc
+      internalID: 2050251223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 183.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49a6bbfbe71ad4832b73edccc5e47d07
+      internalID: -1082326948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_64
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 183.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9a8ab900091b463b8d88cf373d87050
+      internalID: -1921771850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_65
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 183.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33917a4a63a4d4512b40d063954d852c
+      internalID: 1379310538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_66
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 183.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6260379036e94a009348e1ae3a5df37
+      internalID: 1826272773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_67
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 183.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ad471f90d2541cd90d8dab3fcb04e3
+      internalID: -1576871106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_68
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 183.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b90fa87e0cd4d4dbc610e47321f83f
+      internalID: 350388750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_69
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 183.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 990beeee72d2c45a1a1bf8b69507f0e9
+      internalID: -742589626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_70
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 183.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1811b37df63e84f23901a84cdbc3c010
+      internalID: -636981400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_71
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 183.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 914c53d17c048417589199cfddf2128b
+      internalID: 949894478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_72
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 183.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d115929dd2820489687ff92871ea5400
+      internalID: -1549930931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_73
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 94.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b7a8de76c4a4524bbd1b87c58e17f4
+      internalID: -910264929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_74
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 94.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81525f3e17bdc44e5aff653995e1d843
+      internalID: -1631474167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_75
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 94.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c93b58d6dc1524a159b51a38040ea80c
+      internalID: -1137982440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_76
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 94.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8429f039269d54bf8ab6c938499d9ba8
+      internalID: 199249270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_77
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 94.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ca18dd2e62c42bdb76fd3c13a7ae49
+      internalID: -141568406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_78
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 94.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d692537cc0c494bcf94d57b0516f2ce2
+      internalID: 1352901843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_79
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 94.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 022b9b54e63ed4be09e6e94847d7c660
+      internalID: -201255718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_80
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 94.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c771acc7bdef84cb7901b369ee8ee2c1
+      internalID: -1785365918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_81
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 94.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07449f71b6724b4a9775c33cd295fe4
+      internalID: -420405914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_82
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 94.4
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6e78b88a579445f821f9e13b65cb89
+      internalID: 495102752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_83
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5.4000015
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512555da18bbf475ab640793401cc776
+      internalID: 335567462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_84
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 5.4000015
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 964abd298dd7b40f09f351f0ab0bd1f8
+      internalID: -317801889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_85
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 5.4000015
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 376d79e8a46cd49b5a207bde60147f1d
+      internalID: 1281636266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_86
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 5.4000015
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98794c07914534e15920c55775ae41ff
+      internalID: 1132775170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_87
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 5.4000015
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ce43e677528b482bad48afc9687e44d
+      internalID: 986429043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_88
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 5.4000015
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e501aabba5e747e8b7155248c9de0df
+      internalID: 1926126023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emoji-carrotica_curated_89
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 5.4000015
+        width: 89.6
+        height: 89.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e42f94ad83f448febf43b2eb9a8a217
+      internalID: 1797112599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      emoji-carrotica_curated_67: -1576871106
+      emoji-carrotica_curated_18: 1753005398
+      emoji-carrotica_curated_62: 2050251223
+      emoji-carrotica_curated_69: -742589626
+      emoji-carrotica_curated_31: -340649461
+      emoji-carrotica_curated_36: -1167782658
+      emoji-carrotica_curated_38: -1476257144
+      emoji-carrotica_curated_40: -1449668908
+      emoji-carrotica_curated_24: 2083624081
+      emoji-carrotica_curated_20: 675234157
+      emoji-carrotica_curated_32: -1994791694
+      emoji-carrotica_curated_78: 1352901843
+      emoji-carrotica_curated_41: -637681500
+      emoji-carrotica_curated_72: -1549930931
+      emoji-carrotica_curated_65: 1379310538
+      emoji-carrotica_curated_87: 986429043
+      emoji-carrotica_curated_77: -141568406
+      emoji-carrotica_curated_84: -317801889
+      emoji-carrotica_curated_16: -367571162
+      emoji-carrotica_curated_3: -698580252
+      emoji-carrotica_curated_85: 1281636266
+      emoji-carrotica_curated_2: 1838503413
+      emoji-carrotica_curated_64: -1921771850
+      emoji-carrotica_curated_86: 1132775170
+      emoji-carrotica_curated_55: -149607084
+      emoji-carrotica_curated_89: 1797112599
+      emoji-carrotica_curated_51: -633674130
+      emoji-carrotica_curated_68: 350388750
+      emoji-carrotica_curated_5: -1867029806
+      emoji-carrotica_curated_71: 949894478
+      emoji-carrotica_curated_34: 1436571529
+      emoji-carrotica_curated_47: 103437271
+      emoji-carrotica_curated_29: -1721811798
+      emoji-carrotica_curated_27: -1011332747
+      emoji-carrotica_curated_75: -1137982440
+      emoji-carrotica_curated_54: -2077336565
+      emoji-carrotica_curated_8: -1617866242
+      emoji-carrotica_curated_52: -93730612
+      emoji-carrotica_curated_26: 57455343
+      emoji-carrotica_curated_1: -286431376
+      emoji-carrotica_curated_11: 525505684
+      emoji-carrotica_curated_88: 1926126023
+      emoji-carrotica_curated_61: 465389510
+      emoji-carrotica_curated_10: 204626354
+      emoji-carrotica_curated_17: -498531574
+      emoji-carrotica_curated_81: -420405914
+      emoji-carrotica_curated_9: -308708898
+      emoji-carrotica_curated_45: 624926896
+      emoji-carrotica_curated_28: 1988869342
+      emoji-carrotica_curated_50: -224738200
+      emoji-carrotica_curated_74: -1631474167
+      emoji-carrotica_curated_13: -1006475674
+      emoji-carrotica_curated_60: -1344483419
+      emoji-carrotica_curated_39: -1703656826
+      emoji-carrotica_curated_42: 262476912
+      emoji-carrotica_curated_59: -529452832
+      emoji-carrotica_curated_63: -1082326948
+      emoji-carrotica_curated_82: 495102752
+      emoji-carrotica_curated_0: -920416729
+      emoji-carrotica_curated_7: 571548051
+      emoji-carrotica_curated_56: -322711960
+      emoji-carrotica_curated_53: -1966488690
+      emoji-carrotica_curated_25: -948016968
+      emoji-carrotica_curated_49: 1443630068
+      emoji-carrotica_curated_44: -1752731223
+      emoji-carrotica_curated_21: -1339687541
+      emoji-carrotica_curated_57: -846240601
+      emoji-carrotica_curated_14: -1816428173
+      emoji-carrotica_curated_76: 199249270
+      emoji-carrotica_curated_83: 335567462
+      emoji-carrotica_curated_19: -1878551278
+      emoji-carrotica_curated_30: -1264010795
+      emoji-carrotica_curated_12: 736557096
+      emoji-carrotica_curated_22: -71380243
+      emoji-carrotica_curated_33: 1651032800
+      emoji-carrotica_curated_4: -1906951005
+      emoji-carrotica_curated_58: 1661997167
+      emoji-carrotica_curated_15: -94164316
+      emoji-carrotica_curated_48: 2047711135
+      emoji-carrotica_curated_73: -910264929
+      emoji-carrotica_curated_35: -494314716
+      emoji-carrotica_curated_37: 471949963
+      emoji-carrotica_curated_80: -1785365918
+      emoji-carrotica_curated_79: -201255718
+      emoji-carrotica_curated_46: 1569548915
+      emoji-carrotica_curated_70: -636981400
+      emoji-carrotica_curated_6: 1342542153
+      emoji-carrotica_curated_43: -2084614819
+      emoji-carrotica_curated_66: 1826272773
+      emoji-carrotica_curated_23: 1172971560
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
