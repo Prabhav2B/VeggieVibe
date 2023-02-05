@@ -25,9 +25,6 @@ public class GreenFlag : MonoBehaviour
 
     public void HeartClicked()
     {
-        if(heartClicked)
-            return;
-
         heartClicked = true;
         this.GetComponentsInChildren<Transform>()[1].gameObject.SetActive(true);
     }
