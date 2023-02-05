@@ -48,15 +48,15 @@ public class ProfileInteraction : MonoBehaviour
         if (hit2D.collider != null)
         {
             dragActive = true;
-            profileTransform = hit2D.collider.transform.parent.GetComponent<Transform>();
+            profileTransform = ProfilesManager.instance.currentProfile.transform.GetComponent<Transform>();
+            //profileTransform = hit2D.collider.transform.parent.GetComponent<Transform>();
             profileStartPosition = profileTransform.position;
             profileCoroutine = StartCoroutine(MoveProfile());
         }
     }
     
     private IEnumerator MoveProfile()
-    {
-        
+    {        
         while (true)
         {
             if (profileTransform == null)
@@ -71,13 +71,14 @@ public class ProfileInteraction : MonoBehaviour
             yield return null;
         }
     }
-
     
     void EndDetectProfile(Vector2 position)
     {
         if (dragActive)
         {
             dragActive = false;
+            if (CheckIfNeedsToBeSwiped(position)) return;
+
             StopCoroutine(MoveProfile());
             DOTween.Kill(this);
             profileTransform.DOMove(profileStartPosition, .2f);
@@ -85,12 +86,31 @@ public class ProfileInteraction : MonoBehaviour
         }
     }
 
+    bool CheckIfNeedsToBeSwiped(Vector2 position)
+    {        
+        if(position.x > 2.5f)
+        {
+            SwipeAway(GestureBehavior.Direction.right);
+            return true;
+        }
+        if (position.x < -2.5f)
+        {
+            SwipeAway(GestureBehavior.Direction.left);
+            return true;
+        }
+        if (position.y > 3.5f)
+        {
+            SwipeAway(GestureBehavior.Direction.up);
+            return true;
+        }
+        //return to center
+        Debug.LogError("Return to Center");
+        return false;
+    }
+
     void SwipeAway(GestureBehavior.Direction dir)
     {
         // create more profiles
-        ProfilesManager.instance.currentProfile.SetActive(false);
-        ProfilesManager.instance.SpawnMoreProfile();
         ProfilesManager.instance.SwipeAwayDirection(dir);
-
     }
 }
