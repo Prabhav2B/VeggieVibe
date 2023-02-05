@@ -127,7 +127,7 @@ public class GameManager : MonoBehaviour
         //nudes
         victoryScreen.SetActive(false);
         nudes.SetActive(true);
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(11f);
         nudes.SetActive(false);
         endScreen.SetActive(true);
         //end
