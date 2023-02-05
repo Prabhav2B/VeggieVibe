@@ -17,13 +17,15 @@ public class ProfilesManager : MonoBehaviour
 
     void TestProfileSetup()
     {
-        SpriteRenderer profileSr;
+        SpriteRenderer[] profileSr;
         foreach (var profile in _profiles)
         {
-            profileSr = profile.GetComponentInChildren<SpriteRenderer>();
-            profileSr.sortingOrder = layerIndex--;
-            profileSr.color = Random.ColorHSV();
+            profileSr = profile.GetComponentsInChildren<SpriteRenderer>();
 
+            foreach (var sr in profileSr)
+            {
+                sr.sortingOrder = layerIndex--;
+            }
         }
     }
 }
