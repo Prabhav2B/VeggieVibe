@@ -23,15 +23,21 @@ public class GameManager : MonoBehaviour
     private static readonly Vector3 profilesDock = new Vector3(-6f, 0f, 0f);
     private static readonly Vector3 chatGameDock = new Vector3(6f, 0f, 0f);
 
-    int superlikeThreshold;
+    [SerializeField] int superlikeThreshold;
     [SerializeField] int currentProfileNumber;
     public bool startSwiping=false;
-    bool matchScreenDelayComplete=false;
     public bool startChatting=false;
 
     [SerializeField] Animator anim;
     [SerializeField] BioGenerator bioUpdate;
     [SerializeField] GameObject matchScreen;
+    
+    [Header ("Things to activate")]
+    [SerializeField] GameObject chatGameplay;
+    [Header ("Things to deactivate")]
+    [SerializeField] GameObject uiTexts;
+    [SerializeField] GameObject swipingGame;
+
 
 
     private void Awake()
@@ -53,7 +59,6 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         playerActions.OnTap += SplashScreenTap;
-        playerActions.OnTap += MatchScreenTap;
         //OnMatch(gameObject.AddComponent<ProfileBehavior>());
     }
 
@@ -82,30 +87,30 @@ public class GameManager : MonoBehaviour
     {
         currentProfileNumber++;
         bioUpdate.UpdateNames();
-        if (currentProfileNumber > superlikeThreshold)
-            MatchScreenPop();
+        if (currentProfileNumber >= superlikeThreshold)
+            StartCoroutine(MatchScreenPop());
     }
 
     IEnumerator MatchScreenPop()
     {
-        matchScreen.SetActive(true);
         startSwiping = false;
-        yield return new WaitForSeconds(2f);
-        matchScreenDelayComplete = true;
-    }
-    void MatchScreenTap(Vector2 pos)
-    {
-        if (!matchScreenDelayComplete) return;
+        SpriteRenderer[] allSprites = matchScreen.GetComponentsInChildren<SpriteRenderer>();
+        for (int i = 0; i < allSprites.Length; i++)
+        {
+            allSprites[i].sortingOrder += 50 * currentProfileNumber+10;
+        }
+        uiTexts.SetActive(false);
+        swipingGame.SetActive(false);
 
-        matchScreen.SetActive(false);
-        playerActions.OnTap -= MatchScreenTap;
+        matchScreen.SetActive(true);
+        chatGameplay.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        //swipe left
+        matchScreen.transform.DOMove(Vector2.left * 20f, 2f).SetEase(Ease.OutQuad);
+
         startChatting = true;
     }
 
-    public void StartChatting()
-    {
-        startChatting = true;
-    }
 
    
 }
