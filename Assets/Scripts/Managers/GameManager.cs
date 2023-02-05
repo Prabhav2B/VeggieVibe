@@ -64,6 +64,9 @@ public class GameManager : MonoBehaviour
     public void FillMeterAmount(int amount)
     {
         fillAmount += amount;
+        if (fillAmount >= 100)
+            StartCoroutine(WinScreen());
+        
     }
 
     private void OnDisable()
