@@ -7,4 +7,6 @@ public class ButtonInteraction : MonoBehaviour
     public bool superlikeButton;
     public bool likeButton;
     public bool dislikeButton;
+    public bool deleteAppButton;
+    public bool keepSwipingButton;
 }

@@ -3,10 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+
+    [SerializeField] bool debugWin;
+
     [SerializeField] private ProfilesManager _profilesManager;
     [SerializeField] private ChatGameManager _chatGameManager;
 
@@ -32,13 +36,17 @@ public class GameManager : MonoBehaviour
     [SerializeField] BioGenerator bioUpdate;
     [SerializeField] GameObject matchScreen;
     
-    [Header ("Things to activate")]
     [SerializeField] GameObject chatGameplay;
-    [Header ("Things to deactivate")]
+
+
     [SerializeField] GameObject uiTexts;
     [SerializeField] GameObject swipingGame;
 
 
+    [Header ("Ending Sequence")]
+    [SerializeField] GameObject victoryScreen;
+    [SerializeField] GameObject nudes;
+    [SerializeField] GameObject endScreen;
 
     private void Awake()
     {
@@ -111,6 +119,39 @@ public class GameManager : MonoBehaviour
         startChatting = true;
     }
 
+    public IEnumerator WinScreen()
+    {
+        chatGameplay.SetActive(false);
+        victoryScreen.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        //nudes
+        victoryScreen.SetActive(false);
+        nudes.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        nudes.SetActive(false);
+        endScreen.SetActive(true);
+        //end
+    }
 
-   
+
+    public void OnDeleteApp()
+    {
+        Application.Quit();        
+    }
+    public void Restart()  // on selecting no on the final screen
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+
+    private void Update()
+    {
+        if(debugWin)
+        {
+            debugWin = false;
+            StartCoroutine(WinScreen());
+        }
+    }
+
+
 }

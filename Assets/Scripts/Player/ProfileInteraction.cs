@@ -42,20 +42,34 @@ public class ProfileInteraction : MonoBehaviour
 
     void CheckTaps(Vector2 pos)
     {
-        if (!GameManager.instance.startSwiping) return;
-
         Ray ray = playerActions.GetScreenToWorldRay();
         RaycastHit2D hit2D = Physics2D.GetRayIntersection(ray);
-        ButtonInteraction validButton = hit2D.collider.GetComponent<ButtonInteraction>();
-        if(validButton)
+
+        if (GameManager.instance.startSwiping)
         {
-            if (validButton.superlikeButton)
-                SwipeAway(GestureBehavior.Direction.up);
-            else if(validButton.dislikeButton)
-                SwipeAway(GestureBehavior.Direction.left);
-            else if (validButton.likeButton)
-                SwipeAway(GestureBehavior.Direction.right);
+            ButtonInteraction validButton = hit2D.collider.GetComponent<ButtonInteraction>();
+            if (validButton)
+            {
+                if (validButton.superlikeButton)
+                    SwipeAway(GestureBehavior.Direction.up);
+                else if (validButton.dislikeButton)
+                    SwipeAway(GestureBehavior.Direction.left);
+                else if (validButton.likeButton)
+                    SwipeAway(GestureBehavior.Direction.right);
+            }
         }
+        if (GameManager.instance.startChatting)
+        {
+            ButtonInteraction validButton = hit2D.collider.GetComponent<ButtonInteraction>();
+            if (validButton)
+            {
+                if (validButton.deleteAppButton)
+                    GameManager.instance.OnDeleteApp();
+                else if (validButton.keepSwipingButton)
+                    GameManager.instance.Restart();
+            }
+        }
+
     }
 
     void StartDetectProfile(Vector2 position)

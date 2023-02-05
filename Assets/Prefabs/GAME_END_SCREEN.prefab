@@ -591,8 +591,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3709950653883828163, guid: 74fb4bbc6804b394bb5181149b6a6fdc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 74fb4bbc6804b394bb5181149b6a6fdc, type: 3}
+--- !u!1 &1816283876173326971 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1576656766114344105, guid: 74fb4bbc6804b394bb5181149b6a6fdc, type: 3}
+  m_PrefabInstance: {fileID: 924878903349249746}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7316758267026616546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816283876173326971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62e32332f676a49469c7aa0ff1d58bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  superlikeButton: 0
+  likeButton: 0
+  dislikeButton: 0
+  deleteAppButton: 1
+  keepSwipingButton: 0
+--- !u!61 &5428145641049694166
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816283876173326971}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.14923555}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 6.57, y: 3.6}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.57, y: 2.465807}
+  m_EdgeRadius: 0
 --- !u!4 &4931101477779650465 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5240816524303217011, guid: 74fb4bbc6804b394bb5181149b6a6fdc, type: 3}
@@ -665,8 +714,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2745506938342421882, guid: b7c9d196a9724b4458e1b9dc77009578, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b7c9d196a9724b4458e1b9dc77009578, type: 3}
+--- !u!1 &6304174748560664093 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4877107609719474355, guid: b7c9d196a9724b4458e1b9dc77009578, type: 3}
+  m_PrefabInstance: {fileID: 1500290280167648942}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4717310712327712111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6304174748560664093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62e32332f676a49469c7aa0ff1d58bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  superlikeButton: 0
+  likeButton: 0
+  dislikeButton: 0
+  deleteAppButton: 0
+  keepSwipingButton: 1
+--- !u!61 &3537800933238404493
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6304174748560664093}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.14923555}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 6.57, y: 3.6}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.57, y: 2.465807}
+  m_EdgeRadius: 0
 --- !u!4 &8227078656948406976 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7421490717220316270, guid: b7c9d196a9724b4458e1b9dc77009578, type: 3}
